@@ -140,15 +140,14 @@ class PodcastAnalytics {
                 throw new Error('Episode not found');
             }
             
-            // Use the new real audio processing endpoint
-            const response = await fetch('/api/process-episode', {
+            // Use the new real audio processing endpoint with caching
+            const response = await fetch(`/api/process-audio/${videoId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    video_url: episode.url,
-                    video_id: videoId
+                    video_url: episode.url
                 })
             });
             

@@ -117,7 +117,59 @@
     "thumbnail": "https://i.ytimg.com/vi/gUOExMkZCrM/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=gUOExMkZCrM",
     "episode_number": 13,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T22:25:52.970594",
+    "total_words": 2281,
+    "scott_words": 1174,
+    "mark_words": 1107,
+    "scott_percentage": 51,
+    "mark_percentage": 49,
+    "segments_analyzed": 352,
+    "scott_segments": 179,
+    "mark_segments": 173,
+    "processing_note": "Real audio processing completed at 2025-07-20T23:07:54.973312",
+    "sample_transcription": [
+      {
+        "text": "Es sollte ein Wort sein.",
+        "start": 1.4799999999999995,
+        "end": 3.14,
+        "speaker": "scott",
+        "scott_score": 0.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "Es ist so, ey, wissen Sie ein anderes gutes Wort wäre M?",
+        "start": 3.44,
+        "end": 8.2,
+        "speaker": "mark",
+        "scott_score": 0.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "Ey, performant.",
+        "start": 8.56,
+        "end": 9.72,
+        "speaker": "scott",
+        "scott_score": 0.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "Das ist Microsoft benutzt dieses Wort schon immer.",
+        "start": 10.1,
+        "end": 13.26,
+        "speaker": "mark",
+        "scott_score": 0.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "Ist das ein Microsoftwort?",
+        "start": 13.44,
+        "end": 14.66,
+        "speaker": "scott",
+        "scott_score": 0.0,
+        "mark_score": 0.0
+      }
+    ],
+    "full_transcription_available": true
   },
   {
     "video_id": "iC_Oxfsimw0",
