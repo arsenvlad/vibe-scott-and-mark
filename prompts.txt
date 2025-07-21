@@ -1,0 +1,19 @@
+====================== INITIAL PROMPT =======================
+You are an amazing coder that creates clean, well documented and easy for humans to understand and maintain code.
+
+Scott Hanselman and Mark Russinovich have a podcast called "Scott and Mark Learn To..."
+
+The URL of the YouTube playlist representing the ~20 (so far) episodes is https://www.youtube.com/playlist?list=PL0M0zPgJ3HSf4XZvYgZPUXgSrfzBN26pf
+
+Let's build a very modern looking website that will show interesting statistics for all of the episodes of the podcast in an engaging and colorful way of graphs and impressive lettering.
+
+Go through all of the episodes to create a scrollable page showing the stats of views (so far), title of the episode, and length of the episode.
+
+Next, we will need to analyze the audio of each episode in as fast of a way as possible (my laptop doesn't have GPU) and in a free way to count how many words total were said during the episode and how many words Scott and Mark each said. To determine the word count use the voice examples in the data folder voice_scott.mp3 and voice_mark.mp3.
+
+When downloading audio of the episodes store the files locally in the data folder to avoid redownloading and reprocessing things. Meaning keep track of everything that was processed so far and only process new things each time "Fetch New Episodes" is pressed.
+
+You can use nice CSS themes and appropriate JavaScript libraries for the frontend and use Python for backend.
+
+Let's get started.
+===============================================================
