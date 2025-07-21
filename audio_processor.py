@@ -16,13 +16,22 @@ import json
 from datetime import datetime
 from typing import Dict, List, Tuple, Optional
 import re
+import warnings
+
+# Suppress librosa warnings
+warnings.filterwarnings('ignore', message='PySoundFile failed. Trying audioread instead.')
+warnings.filterwarnings('ignore', message='.*__audioread_load.*')
 
 import yt_dlp
 import librosa
 import speech_recognition as sr
 from pydub import AudioSegment
+from pydub.silence import split_on_silence
 import torch
 import numpy as np
+import pickle
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import StandardScaler
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -34,6 +43,15 @@ class PodcastAudioProcessor:
         self.temp_dir = temp_dir or tempfile.gettempdir()
         self.recognizer = sr.Recognizer()
         
+        # Initialize paths for speaker model
+        self.data_dir = os.path.join(os.path.dirname(__file__), 'data')
+        self.model_path = os.path.join(self.data_dir, 'speaker_model.pkl')
+        self.scaler_path = os.path.join(self.data_dir, 'speaker_scaler.pkl')
+        
+        # Speaker classification model
+        self.speaker_model = None
+        self.feature_scaler = None
+        
         # Initialize Whisper for transcription
         try:
             import whisper
@@ -42,6 +60,9 @@ class PodcastAudioProcessor:
         except ImportError:
             logger.warning("Whisper not available, falling back to Google Speech Recognition")
             self.whisper_model = None
+        
+        # Load or train the speaker identification model
+        self._load_or_train_speaker_model()
     
     def download_audio(self, video_url: str, video_id: str) -> str:
         """Download audio from YouTube video."""
@@ -171,12 +192,250 @@ class PodcastAudioProcessor:
             logger.error(f"Error in fallback transcription: {e}")
             return []
     
-    def identify_speakers(self, transcription_chunks: List[Dict]) -> List[Dict]:
+    def _load_or_train_speaker_model(self):
+        """Load existing speaker model or train a new one using voice samples"""
+        if os.path.exists(self.model_path) and os.path.exists(self.scaler_path):
+            logger.info("Loading existing speaker identification model...")
+            self._load_speaker_model()
+        else:
+            logger.info("Training new speaker identification model...")
+            self._train_speaker_model()
+    
+    def _load_speaker_model(self):
+        """Load the trained speaker model and scaler"""
+        try:
+            with open(self.model_path, 'rb') as f:
+                self.speaker_model = pickle.load(f)
+            
+            with open(self.scaler_path, 'rb') as f:
+                self.feature_scaler = pickle.load(f)
+            
+            logger.info("Speaker model loaded successfully")
+        except Exception as e:
+            logger.error(f"Error loading speaker model: {str(e)}")
+            self._train_speaker_model()
+    
+    def _train_speaker_model(self):
+        """Train speaker identification model using voice samples"""
+        try:
+            scott_sample = os.path.join(self.data_dir, 'voice_scott.mp3')
+            mark_sample = os.path.join(self.data_dir, 'voice_mark.mp3')
+            
+            if not os.path.exists(scott_sample) or not os.path.exists(mark_sample):
+                logger.error("Voice samples not found. Cannot train speaker model.")
+                return
+            
+            logger.info("Extracting features from voice samples...")
+            
+            # Extract features from voice samples
+            scott_features = self._extract_voice_features(scott_sample)
+            mark_features = self._extract_voice_features(mark_sample)
+            
+            if scott_features is None or mark_features is None:
+                logger.error("Failed to extract features from voice samples")
+                return
+            
+            logger.info(f"Scott features: {len(scott_features)}, Mark features: {len(mark_features)}")
+            
+            # Use the feature vectors directly - no segmentation needed for training
+            # We'll just use the full feature vector from each voice sample
+            X = np.array([scott_features, mark_features])
+            y = np.array([0, 1])  # 0=Scott, 1=Mark
+            
+            # Create additional training samples by adding small noise variations
+            # This helps the model generalize better
+            noise_samples = []
+            noise_labels = []
+            for i in range(5):  # Create 5 variations of each
+                # Add small random noise (1% of the feature values)
+                scott_noise = scott_features + np.random.normal(0, 0.01 * np.std(scott_features), scott_features.shape)
+                mark_noise = mark_features + np.random.normal(0, 0.01 * np.std(mark_features), mark_features.shape)
+                noise_samples.extend([scott_noise, mark_noise])
+                noise_labels.extend([0, 1])
+            
+            # Combine original and noise samples
+            X = np.vstack([X, np.array(noise_samples)])
+            y = np.concatenate([y, np.array(noise_labels)])
+            
+            logger.info(f"Training with {len(X)} samples, {X.shape[1]} features each")
+            
+            # Scale features
+            self.feature_scaler = StandardScaler()
+            X_scaled = self.feature_scaler.fit_transform(X)
+            
+            # Train model
+            self.speaker_model = RandomForestClassifier(
+                n_estimators=100,
+                random_state=42,
+                max_depth=10
+            )
+            self.speaker_model.fit(X_scaled, y)
+            
+            # Save the trained model
+            with open(self.model_path, 'wb') as f:
+                pickle.dump(self.speaker_model, f)
+            
+            with open(self.scaler_path, 'wb') as f:
+                pickle.dump(self.feature_scaler, f)
+            
+            logger.info("Speaker identification model trained and saved successfully")
+            
+        except Exception as e:
+            logger.error(f"Error training speaker model: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
+    
+    def _extract_voice_features(self, audio_file):
+        """Extract audio features for speaker identification"""
+        try:
+            # Load audio file
+            y, sr = librosa.load(audio_file, sr=22050)
+            
+            # Use the same feature extraction logic
+            return self._extract_voice_features_from_audio(y, sr)
+            
+        except Exception as e:
+            logger.error(f"Error extracting voice features: {str(e)}")
+            return None
+    
+    def _identify_speaker_by_voice(self, audio_path: str, start_time: float, end_time: float) -> str:
+        """Identify speaker using trained voice model for a specific audio segment"""
+        if self.speaker_model is None or self.feature_scaler is None:
+            return 'unknown'
+        
+        try:
+            # Load audio file and extract segment
+            y, sr = librosa.load(audio_path, sr=22050, offset=start_time, duration=end_time-start_time)
+            
+            if len(y) < sr * 0.5:  # Skip very short segments (less than 0.5 seconds)
+                return 'unknown'
+            
+            # Extract features from this segment
+            features = self._extract_segment_features(y, sr)
+            
+            if features is None:
+                return 'unknown'
+            
+            # Predict speaker
+            features_scaled = self.feature_scaler.transform([features])
+            prediction = self.speaker_model.predict(features_scaled)[0]
+            confidence = self.speaker_model.predict_proba(features_scaled)[0]
+            
+            # Only return prediction if confidence is high enough
+            max_confidence = np.max(confidence)
+            if max_confidence < 0.6:  # Require at least 60% confidence
+                return 'unknown'
+            
+            return 'scott' if prediction == 0 else 'mark'
+            
+        except Exception as e:
+            logger.warning(f"Error identifying speaker by voice: {str(e)}")
+            return 'unknown'
+    
+    def _extract_segment_features(self, y, sr):
+        """Extract features from a single audio segment - must match _extract_voice_features exactly"""
+        try:
+            # Use the same feature extraction logic as training
+            return self._extract_voice_features_from_audio(y, sr)
+            
+        except Exception as e:
+            logger.error(f"Error extracting segment features: {str(e)}")
+            return None
+    
+    def _extract_voice_features_from_audio(self, y, sr):
+        """Extract audio features for speaker identification from loaded audio data"""
+        try:
+            features = []
+            
+            # MFCC features (most important for speaker identification)
+            mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
+            features.extend([
+                np.mean(mfccs, axis=1),
+                np.std(mfccs, axis=1),
+                np.max(mfccs, axis=1),
+                np.min(mfccs, axis=1)
+            ])
+            
+            # Spectral features
+            spectral_centroids = librosa.feature.spectral_centroid(y=y, sr=sr)
+            spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)
+            spectral_bandwidth = librosa.feature.spectral_bandwidth(y=y, sr=sr)
+            zero_crossing_rate = librosa.feature.zero_crossing_rate(y)
+            
+            features.extend([
+                np.mean(spectral_centroids),
+                np.std(spectral_centroids),
+                np.mean(spectral_rolloff),
+                np.std(spectral_rolloff),
+                np.mean(spectral_bandwidth),
+                np.std(spectral_bandwidth),
+                np.mean(zero_crossing_rate),
+                np.std(zero_crossing_rate)
+            ])
+            
+            # Chroma features
+            chroma = librosa.feature.chroma_stft(y=y, sr=sr)
+            features.extend([
+                np.mean(chroma, axis=1),
+                np.std(chroma, axis=1)
+            ])
+            
+            # Flatten all features
+            feature_vector = np.concatenate([np.atleast_1d(f) for f in features])
+            
+            # Log feature dimension for debugging
+            logger.debug(f"Extracted {len(feature_vector)} features from audio segment")
+            
+            return feature_vector
+            
+        except Exception as e:
+            logger.error(f"Error extracting voice features: {str(e)}")
+            return None
+    
+    def identify_speakers(self, transcription_chunks: List[Dict], audio_path: str) -> List[Dict]:
         """
-        Identify speakers (Scott vs Mark) in transcription chunks.
-        Uses keyword-based heuristics and speaking patterns.
+        Identify speakers (Scott vs Mark) using trained voice model with keyword fallback.
         """
         try:
+            processed_chunks = []
+            
+            for i, chunk in enumerate(transcription_chunks):
+                # Try voice-based identification first
+                speaker = self._identify_speaker_by_voice(
+                    audio_path, 
+                    chunk['start'], 
+                    chunk['end']
+                )
+                
+                # If voice identification fails, fall back to keyword heuristics
+                if speaker == 'unknown':
+                    speaker = self._identify_speaker_by_keywords(chunk, processed_chunks, i)
+                
+                processed_chunks.append({
+                    'text': chunk['text'],
+                    'start': chunk['start'],
+                    'end': chunk['end'],
+                    'speaker': speaker,
+                    'scott_score': 1.0 if speaker == 'scott' else 0.0,
+                    'mark_score': 1.0 if speaker == 'mark' else 0.0
+                })
+            
+            logger.info(f"Speaker identification completed for {len(processed_chunks)} segments")
+            return processed_chunks
+            
+        except Exception as e:
+            logger.error(f"Error in speaker identification: {e}")
+            # Return chunks with unknown speaker
+            return [
+                {**chunk, 'speaker': 'unknown', 'scott_score': 0, 'mark_score': 0}
+                for chunk in transcription_chunks
+            ]
+    
+    def _identify_speaker_by_keywords(self, chunk: Dict, processed_chunks: List[Dict], index: int) -> str:
+        """Fallback speaker identification using keyword heuristics"""
+        try:
+            text_lower = chunk['text'].lower()
+            
             # Keywords/phrases that might indicate who is speaking
             scott_indicators = [
                 'hanselman', 'scott', 'hanselminutes', 'azure', 'accessibility',
@@ -190,63 +449,42 @@ class PodcastAudioProcessor:
                 'process', 'registry', 'security', 'troubleshooting', 'tools'
             ]
             
-            processed_chunks = []
+            # Count indicator words
+            scott_score = sum(1 for indicator in scott_indicators if indicator in text_lower)
+            mark_score = sum(1 for indicator in mark_indicators if indicator in text_lower)
             
-            for i, chunk in enumerate(transcription_chunks):
-                text_lower = chunk['text'].lower()
-                
-                # Count indicator words
-                scott_score = sum(1 for indicator in scott_indicators if indicator in text_lower)
-                mark_score = sum(1 for indicator in mark_indicators if indicator in text_lower)
-                
-                # Additional heuristics
-                # Scott tends to ask more questions and be more conversational
-                question_words = ['what', 'how', 'why', 'when', 'where', 'who']
-                question_score = sum(1 for q in question_words if q in text_lower)
-                
-                # Mark tends to be more technical and use longer explanations
-                technical_words = ['system', 'process', 'kernel', 'memory', 'cpu', 'performance']
-                technical_score = sum(1 for t in technical_words if t in text_lower)
-                
-                # Adjust scores based on additional heuristics
-                scott_score += question_score * 0.5
-                mark_score += technical_score * 0.5
-                
-                # Determine speaker
-                if scott_score > mark_score:
-                    speaker = 'scott'
-                elif mark_score > scott_score:
-                    speaker = 'mark'
+            # Additional heuristics
+            # Scott tends to ask more questions and be more conversational
+            question_words = ['what', 'how', 'why', 'when', 'where', 'who']
+            question_score = sum(1 for q in question_words if q in text_lower)
+            
+            # Mark tends to be more technical and use longer explanations
+            technical_words = ['system', 'process', 'kernel', 'memory', 'cpu', 'performance']
+            technical_score = sum(1 for t in technical_words if t in text_lower)
+            
+            # Adjust scores based on additional heuristics
+            scott_score += question_score * 0.5
+            mark_score += technical_score * 0.5
+            
+            # Determine speaker
+            if scott_score > mark_score:
+                return 'scott'
+            elif mark_score > scott_score:
+                return 'mark'
+            else:
+                # Fallback: try to maintain conversation flow
+                # If previous speaker was identified, alternate is likely
+                if index > 0 and processed_chunks[index-1]['speaker'] == 'scott':
+                    return 'mark'
+                elif index > 0 and processed_chunks[index-1]['speaker'] == 'mark':
+                    return 'scott'
                 else:
-                    # Fallback: try to maintain conversation flow
-                    # If previous speaker was identified, alternate is likely
-                    if i > 0 and processed_chunks[i-1]['speaker'] == 'scott':
-                        speaker = 'mark'
-                    elif i > 0 and processed_chunks[i-1]['speaker'] == 'mark':
-                        speaker = 'scott'
-                    else:
-                        # Default alternating pattern starting with Scott
-                        speaker = 'scott' if i % 2 == 0 else 'mark'
-                
-                processed_chunks.append({
-                    'text': chunk['text'],
-                    'start': chunk['start'],
-                    'end': chunk['end'],
-                    'speaker': speaker,
-                    'scott_score': scott_score,
-                    'mark_score': mark_score
-                })
-            
-            logger.info(f"Speaker identification completed for {len(processed_chunks)} segments")
-            return processed_chunks
-            
+                    # Default alternating pattern starting with Scott
+                    return 'scott' if index % 2 == 0 else 'mark'
+        
         except Exception as e:
-            logger.error(f"Error in speaker identification: {e}")
-            # Return chunks with unknown speaker
-            return [
-                {**chunk, 'speaker': 'unknown', 'scott_score': 0, 'mark_score': 0}
-                for chunk in transcription_chunks
-            ]
+            logger.warning(f"Error in keyword-based identification: {e}")
+            return 'unknown'
     
     def count_words(self, processed_chunks: List[Dict]) -> Dict:
         """Count words for each speaker and calculate statistics."""
@@ -340,7 +578,7 @@ class PodcastAudioProcessor:
                 raise Exception("No transcription data generated")
             
             # Step 3: Identify speakers
-            processed_chunks = self.identify_speakers(transcription_chunks)
+            processed_chunks = self.identify_speakers(transcription_chunks, audio_path)
             
             # Step 4: Count words
             word_stats = self.count_words(processed_chunks)
@@ -390,331 +628,3 @@ def test_audio_processor():
 
 if __name__ == "__main__":
     test_audio_processor()
-    def __init__(self):
-        self.data_dir = os.path.join(os.path.dirname(__file__), 'data')
-        self.model_path = os.path.join(self.data_dir, 'speaker_model.pkl')
-        self.scaler_path = os.path.join(self.data_dir, 'speaker_scaler.pkl')
-        
-        # Voice recognition setup
-        self.recognizer = sr.Recognizer()
-        
-        # Speaker classification model
-        self.speaker_model = None
-        self.feature_scaler = None
-        
-        # Load or train the speaker identification model
-        self._load_or_train_speaker_model()
-    
-    def _load_or_train_speaker_model(self):
-        """Load existing speaker model or train a new one using voice samples"""
-        if os.path.exists(self.model_path) and os.path.exists(self.scaler_path):
-            logger.info("Loading existing speaker identification model...")
-            self._load_speaker_model()
-        else:
-            logger.info("Training new speaker identification model...")
-            self._train_speaker_model()
-    
-    def _load_speaker_model(self):
-        """Load the trained speaker model and scaler"""
-        try:
-            with open(self.model_path, 'rb') as f:
-                self.speaker_model = pickle.load(f)
-            
-            with open(self.scaler_path, 'rb') as f:
-                self.feature_scaler = pickle.load(f)
-            
-            logger.info("Speaker model loaded successfully")
-        except Exception as e:
-            logger.error(f"Error loading speaker model: {str(e)}")
-            self._train_speaker_model()
-    
-    def _train_speaker_model(self):
-        """Train speaker identification model using voice samples"""
-        try:
-            scott_sample = os.path.join(self.data_dir, 'voice_scott.mp3')
-            mark_sample = os.path.join(self.data_dir, 'voice_mark.mp3')
-            
-            if not os.path.exists(scott_sample) or not os.path.exists(mark_sample):
-                logger.error("Voice samples not found. Cannot train speaker model.")
-                return
-            
-            logger.info("Extracting features from voice samples...")
-            
-            # Extract features from voice samples
-            scott_features = self._extract_voice_features(scott_sample)
-            mark_features = self._extract_voice_features(mark_sample)
-            
-            if scott_features is None or mark_features is None:
-                logger.error("Failed to extract features from voice samples")
-                return
-            
-            # Create training data
-            # We'll create multiple segments from each sample for better training
-            scott_segments = self._segment_audio_features(scott_features)
-            mark_segments = self._segment_audio_features(mark_features)
-            
-            # Prepare training data
-            X = np.vstack([scott_segments, mark_segments])
-            y = np.array([0] * len(scott_segments) + [1] * len(mark_segments))  # 0=Scott, 1=Mark
-            
-            # Scale features
-            self.feature_scaler = StandardScaler()
-            X_scaled = self.feature_scaler.fit_transform(X)
-            
-            # Train model
-            self.speaker_model = RandomForestClassifier(
-                n_estimators=100,
-                random_state=42,
-                max_depth=10
-            )
-            self.speaker_model.fit(X_scaled, y)
-            
-            # Save the trained model
-            with open(self.model_path, 'wb') as f:
-                pickle.dump(self.speaker_model, f)
-            
-            with open(self.scaler_path, 'wb') as f:
-                pickle.dump(self.feature_scaler, f)
-            
-            logger.info("Speaker identification model trained and saved successfully")
-            
-        except Exception as e:
-            logger.error(f"Error training speaker model: {str(e)}")
-    
-    def _extract_voice_features(self, audio_file):
-        """Extract audio features for speaker identification"""
-        try:
-            # Load audio file
-            y, sr = librosa.load(audio_file, sr=22050)
-            
-            # Extract various audio features
-            features = []
-            
-            # MFCC features (most important for speaker identification)
-            mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
-            features.extend([
-                np.mean(mfccs, axis=1),
-                np.std(mfccs, axis=1),
-                np.max(mfccs, axis=1),
-                np.min(mfccs, axis=1)
-            ])
-            
-            # Spectral features
-            spectral_centroids = librosa.feature.spectral_centroid(y=y, sr=sr)
-            spectral_rolloff = librosa.feature.spectral_rolloff(y=y, sr=sr)
-            spectral_bandwidth = librosa.feature.spectral_bandwidth(y=y, sr=sr)
-            zero_crossing_rate = librosa.feature.zero_crossing_rate(y)
-            
-            features.extend([
-                np.mean(spectral_centroids),
-                np.std(spectral_centroids),
-                np.mean(spectral_rolloff),
-                np.std(spectral_rolloff),
-                np.mean(spectral_bandwidth),
-                np.std(spectral_bandwidth),
-                np.mean(zero_crossing_rate),
-                np.std(zero_crossing_rate)
-            ])
-            
-            # Chroma features
-            chroma = librosa.feature.chroma_stft(y=y, sr=sr)
-            features.extend([
-                np.mean(chroma, axis=1),
-                np.std(chroma, axis=1)
-            ])
-            
-            # Flatten all features
-            feature_vector = np.concatenate([np.atleast_1d(f) for f in features])
-            
-            return feature_vector
-            
-        except Exception as e:
-            logger.error(f"Error extracting voice features: {str(e)}")
-            return None
-    
-    def _segment_audio_features(self, features, segment_size=50):
-        """Create multiple feature segments for training"""
-        segments = []
-        feature_length = len(features)
-        
-        for i in range(0, feature_length - segment_size + 1, segment_size // 2):
-            segment = features[i:i + segment_size]
-            if len(segment) == segment_size:
-                segments.append(segment)
-        
-        if not segments:
-            segments = [features[:segment_size] if len(features) >= segment_size else features]
-        
-        return np.array(segments)
-    
-    def analyze_episode(self, audio_file, video_id):
-        """
-        Analyze an episode audio file for speaker identification and word counting
-        """
-        try:
-            logger.info(f"Starting audio analysis for episode {video_id}")
-            
-            # Convert to WAV if needed and load audio
-            audio_data = self._prepare_audio(audio_file)
-            if audio_data is None:
-                return {'error': 'Failed to prepare audio'}
-            
-            # Split audio into segments based on silence
-            segments = self._split_audio_segments(audio_data)
-            logger.info(f"Split audio into {len(segments)} segments")
-            
-            # Analyze each segment
-            scott_words = 0
-            mark_words = 0
-            total_words = 0
-            segment_analysis = []
-            
-            for i, segment in enumerate(segments):
-                if len(segment) < 1000:  # Skip very short segments
-                    continue
-                
-                # Transcribe segment
-                transcript = self._transcribe_segment(segment)
-                if not transcript:
-                    continue
-                
-                # Count words in transcript
-                words_in_segment = len(transcript.split())
-                total_words += words_in_segment
-                
-                # Identify speaker for this segment
-                speaker = self._identify_speaker(segment)
-                
-                if speaker == 'scott':
-                    scott_words += words_in_segment
-                elif speaker == 'mark':
-                    mark_words += words_in_segment
-                
-                segment_analysis.append({
-                    'segment': i,
-                    'speaker': speaker,
-                    'words': words_in_segment,
-                    'transcript': transcript[:100] + '...' if len(transcript) > 100 else transcript
-                })
-                
-                # Log progress every 10 segments
-                if (i + 1) % 10 == 0:
-                    logger.info(f"Processed {i + 1}/{len(segments)} segments")
-            
-            # Calculate speaking time percentages
-            scott_percentage = (scott_words / max(total_words, 1)) * 100
-            mark_percentage = (mark_words / max(total_words, 1)) * 100
-            
-            analysis_result = {
-                'total_words': total_words,
-                'scott_words': scott_words,
-                'mark_words': mark_words,
-                'scott_percentage': round(scott_percentage, 1),
-                'mark_percentage': round(mark_percentage, 1),
-                'segments_analyzed': len(segment_analysis),
-                'processing_date': os.path.getctime(audio_file) if os.path.exists(audio_file) else None
-            }
-            
-            logger.info(f"Analysis complete for {video_id}: {total_words} total words, {scott_words} Scott, {mark_words} Mark")
-            
-            return analysis_result
-            
-        except Exception as e:
-            logger.error(f"Error analyzing episode audio: {str(e)}")
-            return {'error': str(e)}
-    
-    def _prepare_audio(self, audio_file):
-        """Prepare audio file for processing"""
-        try:
-            # Load audio file with pydub for better format support
-            audio = AudioSegment.from_file(audio_file)
-            
-            # Convert to mono and normalize sample rate
-            audio = audio.set_channels(1).set_frame_rate(22050)
-            
-            # Normalize volume
-            audio = audio.normalize()
-            
-            return audio
-            
-        except Exception as e:
-            logger.error(f"Error preparing audio: {str(e)}")
-            return None
-    
-    def _split_audio_segments(self, audio_data, silence_thresh=-40, min_silence_len=500):
-        """Split audio into segments based on silence"""
-        try:
-            segments = split_on_silence(
-                audio_data,
-                min_silence_len=min_silence_len,
-                silence_thresh=silence_thresh,
-                keep_silence=100
-            )
-            
-            # Filter out very short segments (less than 1 second)
-            segments = [seg for seg in segments if len(seg) > 1000]
-            
-            return segments
-            
-        except Exception as e:
-            logger.error(f"Error splitting audio segments: {str(e)}")
-            return [audio_data]  # Return original audio as single segment
-    
-    def _transcribe_segment(self, audio_segment):
-        """Transcribe an audio segment to text"""
-        try:
-            # Export segment to temporary file for speech recognition
-            temp_file = os.path.join(self.data_dir, 'temp_segment.wav')
-            audio_segment.export(temp_file, format='wav')
-            
-            # Use speech recognition
-            with sr.AudioFile(temp_file) as source:
-                audio = self.recognizer.record(source)
-                transcript = self.recognizer.recognize_google(audio)
-                
-            # Clean up temp file
-            if os.path.exists(temp_file):
-                os.remove(temp_file)
-                
-            return transcript
-            
-        except sr.UnknownValueError:
-            # Speech recognition could not understand audio
-            return ""
-        except sr.RequestError as e:
-            logger.warning(f"Speech recognition error: {str(e)}")
-            return ""
-        except Exception as e:
-            logger.warning(f"Error transcribing segment: {str(e)}")
-            return ""
-    
-    def _identify_speaker(self, audio_segment):
-        """Identify whether the speaker is Scott or Mark"""
-        if self.speaker_model is None or self.feature_scaler is None:
-            # If no model available, return unknown
-            return 'unknown'
-        
-        try:
-            # Export segment to temporary file for feature extraction
-            temp_file = os.path.join(self.data_dir, 'temp_speaker.wav')
-            audio_segment.export(temp_file, format='wav')
-            
-            # Extract features
-            features = self._extract_voice_features(temp_file)
-            
-            # Clean up temp file
-            if os.path.exists(temp_file):
-                os.remove(temp_file)
-            
-            if features is None:
-                return 'unknown'
-            
-            # Predict speaker
-            features_scaled = self.feature_scaler.transform([features])
-            prediction = self.speaker_model.predict(features_scaled)[0]
-            
-            return 'scott' if prediction == 0 else 'mark'
-            
-        except Exception as e:
-            logger.warning(f"Error identifying speaker: {str(e)}")
-            return 'unknown'

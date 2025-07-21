@@ -1,17 +1,16 @@
 {
   "NTFgywWXpw8": {
-    "processed_at": "2025-07-20T22:46:29.517643",
-    "method": "real_audio_analysis",
-    "results": {
+    "processed_at": "2025-07-20T23:38:57.737492",
+    "analysis": {
       "total_words": 549,
-      "scott_words": 348,
-      "mark_words": 201,
-      "scott_percentage": 63,
-      "mark_percentage": 37,
+      "scott_words": 384,
+      "mark_words": 165,
+      "scott_percentage": 70,
+      "mark_percentage": 30,
       "segments_analyzed": 69,
-      "scott_segments": 41,
-      "mark_segments": 28,
-      "processing_note": "Real audio processing completed at 2025-07-20T22:46:29.515897",
+      "scott_segments": 45,
+      "mark_segments": 24,
+      "processing_note": "Real audio processing completed at 2025-07-20T23:38:57.721006",
       "sample_transcription": [
         {
           "text": "The world is littered with podcasts with nine episodes.",
@@ -27,7 +26,7 @@
           "end": 12.0,
           "speaker": "mark",
           "scott_score": 0.0,
-          "mark_score": 0.0
+          "mark_score": 1.0
         },
         {
           "text": "is an apology for the podcast not being more regular.",
@@ -41,8 +40,8 @@
           "text": "The first episode is very triumphant.",
           "start": 16.32,
           "end": 17.78,
-          "speaker": "mark",
-          "scott_score": 0.0,
+          "speaker": "scott",
+          "scott_score": 1.0,
           "mark_score": 0.0
         },
         {
@@ -50,122 +49,7 @@
           "start": 18.14,
           "end": 19.02,
           "speaker": "scott",
-          "scott_score": 0.5,
-          "mark_score": 0.0
-        }
-      ],
-      "full_transcription_available": true
-    }
-  },
-  "G5IguDmvtjo": {
-    "processed_at": "2025-07-20T22:52:21.812252",
-    "method": "real_audio_analysis",
-    "results": {
-      "total_words": 2169,
-      "scott_words": 1167,
-      "mark_words": 1002,
-      "scott_percentage": 54,
-      "mark_percentage": 46,
-      "segments_analyzed": 349,
-      "scott_segments": 182,
-      "mark_segments": 167,
-      "processing_note": "Real audio processing completed at 2025-07-20T22:52:21.772590",
-      "sample_transcription": [
-        {
-          "text": "Yeah. Are we going to be influencers then?",
-          "start": 0.0,
-          "end": 2.04,
-          "speaker": "scott",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "I feel very influenced. All right.",
-          "start": 4.06,
-          "end": 6.4,
-          "speaker": "mark",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Do you do dances? No, I don't. I'm like, catch. I just live right here. That's me.",
-          "start": 7.54,
-          "end": 13.7,
-          "speaker": "scott",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Yeah. After I stay. All right. We have, uh, I think you should stay.",
-          "start": 13.84,
-          "end": 20.14,
-          "speaker": "mark",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "I'd appreciate that. You can't dance because you're",
-          "start": 20.7,
-          "end": 23.84,
-          "speaker": "scott",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        }
-      ],
-      "full_transcription_available": true
-    }
-  },
-  "gUOExMkZCrM": {
-    "processed_at": "2025-07-20T23:07:54.975036",
-    "analysis": {
-      "total_words": 2281,
-      "scott_words": 1174,
-      "mark_words": 1107,
-      "scott_percentage": 51,
-      "mark_percentage": 49,
-      "segments_analyzed": 352,
-      "scott_segments": 179,
-      "mark_segments": 173,
-      "processing_note": "Real audio processing completed at 2025-07-20T23:07:54.973312",
-      "sample_transcription": [
-        {
-          "text": "Es sollte ein Wort sein.",
-          "start": 1.4799999999999995,
-          "end": 3.14,
-          "speaker": "scott",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Es ist so, ey, wissen Sie ein anderes gutes Wort wäre M?",
-          "start": 3.44,
-          "end": 8.2,
-          "speaker": "mark",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Ey, performant.",
-          "start": 8.56,
-          "end": 9.72,
-          "speaker": "scott",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Das ist Microsoft benutzt dieses Wort schon immer.",
-          "start": 10.1,
-          "end": 13.26,
-          "speaker": "mark",
-          "scott_score": 0.0,
-          "mark_score": 0.0
-        },
-        {
-          "text": "Ist das ein Microsoftwort?",
-          "start": 13.44,
-          "end": 14.66,
-          "speaker": "scott",
-          "scott_score": 0.0,
+          "scott_score": 1.0,
           "mark_score": 0.0
         }
       ],

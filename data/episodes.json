@@ -5,14 +5,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich discuss innovative tools they built with AI assistance: Mark’s smart directory navigation tool that streamlines moving through nested folders by typing partial names, and Scott’s study website that transforms complex topics into structured, digestible material with AI-generated answers and progress tracking. They explore the challenges of AI “hallucination,” where models invent detailed but fictional information, and share insights on computer science history, including Leslie Lamport’s contributions. Their conversation also touches on evolving UI design trends from minimalist styles to flashy effects like “liquid glass” and debates the balance between aesthetics, usability, and energy efficiency in modern technology. \n\nListen to other episodes at https://scottandmarklearn.to     \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts    \n\n\nCode: 5Q6MBEQYU7GRVDVG",
     "duration_seconds": 1598,
     "duration_formatted": "26:38",
-    "view_count": 5190,
+    "view_count": 5189,
     "upload_date": "20250709",
     "upload_date_formatted": "July 09, 2025",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/UmXW8nGG9ZE/hqdefault.jpg?v=686d528b",
     "url": "https://www.youtube.com/watch?v=UmXW8nGG9ZE",
     "episode_number": 20,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "SGk9iampcZw",
@@ -27,7 +27,7 @@
     "thumbnail": "https://i.ytimg.com/vi/SGk9iampcZw/hqdefault.jpg?v=685af39b",
     "url": "https://www.youtube.com/watch?v=SGk9iampcZw",
     "episode_number": 19,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "ukzbSO1fUAY",
@@ -42,7 +42,7 @@
     "thumbnail": "https://i.ytimg.com/vi/ukzbSO1fUAY/hqdefault.jpg?v=68487e64",
     "url": "https://www.youtube.com/watch?v=ukzbSO1fUAY",
     "episode_number": 18,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "IYj6tj3bhsA",
@@ -57,7 +57,7 @@
     "thumbnail": "https://i.ytimg.com/vi/IYj6tj3bhsA/hqdefault.jpg?v=68361c6b",
     "url": "https://www.youtube.com/watch?v=IYj6tj3bhsA",
     "episode_number": 17,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "yYcEiNkdkyo",
@@ -72,7 +72,7 @@
     "thumbnail": "https://i.ytimg.com/vi/yYcEiNkdkyo/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=yYcEiNkdkyo",
     "episode_number": 16,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "xcaKYRgTvys",
@@ -87,7 +87,7 @@
     "thumbnail": "https://i.ytimg.com/vi/xcaKYRgTvys/hqdefault.jpg?v=681118fa",
     "url": "https://www.youtube.com/watch?v=xcaKYRgTvys",
     "episode_number": 15,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "BZQnqqy2Of0",
@@ -102,7 +102,7 @@
     "thumbnail": "https://i.ytimg.com/vi/BZQnqqy2Of0/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=BZQnqqy2Of0",
     "episode_number": 14,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "gUOExMkZCrM",
@@ -117,59 +117,7 @@
     "thumbnail": "https://i.ytimg.com/vi/gUOExMkZCrM/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=gUOExMkZCrM",
     "episode_number": 13,
-    "fetched_at": "2025-07-20T22:25:52.970594",
-    "total_words": 2281,
-    "scott_words": 1174,
-    "mark_words": 1107,
-    "scott_percentage": 51,
-    "mark_percentage": 49,
-    "segments_analyzed": 352,
-    "scott_segments": 179,
-    "mark_segments": 173,
-    "processing_note": "Real audio processing completed at 2025-07-20T23:07:54.973312",
-    "sample_transcription": [
-      {
-        "text": "Es sollte ein Wort sein.",
-        "start": 1.4799999999999995,
-        "end": 3.14,
-        "speaker": "scott",
-        "scott_score": 0.0,
-        "mark_score": 0.0
-      },
-      {
-        "text": "Es ist so, ey, wissen Sie ein anderes gutes Wort wäre M?",
-        "start": 3.44,
-        "end": 8.2,
-        "speaker": "mark",
-        "scott_score": 0.0,
-        "mark_score": 0.0
-      },
-      {
-        "text": "Ey, performant.",
-        "start": 8.56,
-        "end": 9.72,
-        "speaker": "scott",
-        "scott_score": 0.0,
-        "mark_score": 0.0
-      },
-      {
-        "text": "Das ist Microsoft benutzt dieses Wort schon immer.",
-        "start": 10.1,
-        "end": 13.26,
-        "speaker": "mark",
-        "scott_score": 0.0,
-        "mark_score": 0.0
-      },
-      {
-        "text": "Ist das ein Microsoftwort?",
-        "start": 13.44,
-        "end": 14.66,
-        "speaker": "scott",
-        "scott_score": 0.0,
-        "mark_score": 0.0
-      }
-    ],
-    "full_transcription_available": true
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "iC_Oxfsimw0",
@@ -184,7 +132,7 @@
     "thumbnail": "https://i.ytimg.com/vi/iC_Oxfsimw0/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=iC_Oxfsimw0",
     "episode_number": 12,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "PjInF4wbmxM",
@@ -199,7 +147,7 @@
     "thumbnail": "https://i.ytimg.com/vi/PjInF4wbmxM/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=PjInF4wbmxM",
     "episode_number": 11,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "8WEoZ646Ikk",
@@ -214,7 +162,7 @@
     "thumbnail": "https://i.ytimg.com/vi/8WEoZ646Ikk/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=8WEoZ646Ikk",
     "episode_number": 10,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "X2jrg7r4gOY",
@@ -229,7 +177,7 @@
     "thumbnail": "https://i.ytimg.com/vi/X2jrg7r4gOY/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=X2jrg7r4gOY",
     "episode_number": 9,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "SUpiZMwJn54",
@@ -244,7 +192,7 @@
     "thumbnail": "https://i.ytimg.com/vi/SUpiZMwJn54/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=SUpiZMwJn54",
     "episode_number": 8,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "Ypcog_lv0DA",
@@ -259,7 +207,7 @@
     "thumbnail": "https://i.ytimg.com/vi/Ypcog_lv0DA/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Ypcog_lv0DA",
     "episode_number": 7,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "Jhga7FOB2XA",
@@ -274,7 +222,7 @@
     "thumbnail": "https://i.ytimg.com/vi/Jhga7FOB2XA/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Jhga7FOB2XA",
     "episode_number": 6,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "FWMWgqs3ARw",
@@ -289,7 +237,7 @@
     "thumbnail": "https://i.ytimg.com/vi/FWMWgqs3ARw/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=FWMWgqs3ARw",
     "episode_number": 5,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "G5IguDmvtjo",
@@ -304,7 +252,7 @@
     "thumbnail": "https://i.ytimg.com/vi/G5IguDmvtjo/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=G5IguDmvtjo",
     "episode_number": null,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "2aKfztEnN7k",
@@ -319,7 +267,7 @@
     "thumbnail": "https://i.ytimg.com/vi/2aKfztEnN7k/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=2aKfztEnN7k",
     "episode_number": 4,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "RpV5EucK43U",
@@ -334,7 +282,7 @@
     "thumbnail": "https://i.ytimg.com/vi/RpV5EucK43U/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RpV5EucK43U",
     "episode_number": 3,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "Z1yYcUFzH2A",
@@ -349,7 +297,7 @@
     "thumbnail": "https://i.ytimg.com/vi_webp/Z1yYcUFzH2A/maxresdefault.webp",
     "url": "https://www.youtube.com/watch?v=Z1yYcUFzH2A",
     "episode_number": 2,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "JxRLX4VGuYg",
@@ -364,7 +312,7 @@
     "thumbnail": "https://i.ytimg.com/vi/JxRLX4VGuYg/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JxRLX4VGuYg",
     "episode_number": 1,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067"
   },
   {
     "video_id": "NTFgywWXpw8",
@@ -379,6 +327,58 @@
     "thumbnail": "https://i.ytimg.com/vi_webp/NTFgywWXpw8/maxresdefault.webp",
     "url": "https://www.youtube.com/watch?v=NTFgywWXpw8",
     "episode_number": null,
-    "fetched_at": "2025-07-20T22:25:52.970594"
+    "fetched_at": "2025-07-20T23:25:32.894067",
+    "total_words": 549,
+    "scott_words": 384,
+    "mark_words": 165,
+    "scott_percentage": 70,
+    "mark_percentage": 30,
+    "segments_analyzed": 69,
+    "scott_segments": 45,
+    "mark_segments": 24,
+    "processing_note": "Real audio processing completed at 2025-07-20T23:38:57.721006",
+    "sample_transcription": [
+      {
+        "text": "The world is littered with podcasts with nine episodes.",
+        "start": 3.6399999999999997,
+        "end": 6.24,
+        "speaker": "scott",
+        "scott_score": 1.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "And for a long time, there are, and usually each episode, at the beginning of each episode,",
+        "start": 7.08,
+        "end": 12.0,
+        "speaker": "mark",
+        "scott_score": 0.0,
+        "mark_score": 1.0
+      },
+      {
+        "text": "is an apology for the podcast not being more regular.",
+        "start": 12.04,
+        "end": 15.76,
+        "speaker": "scott",
+        "scott_score": 1.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "The first episode is very triumphant.",
+        "start": 16.32,
+        "end": 17.78,
+        "speaker": "scott",
+        "scott_score": 1.0,
+        "mark_score": 0.0
+      },
+      {
+        "text": "Welcome to the show.",
+        "start": 18.14,
+        "end": 19.02,
+        "speaker": "scott",
+        "scott_score": 1.0,
+        "mark_score": 0.0
+      }
+    ],
+    "full_transcription_available": true
   }
 ]
