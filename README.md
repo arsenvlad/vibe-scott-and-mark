@@ -112,6 +112,9 @@ A modern web application for analyzing the "Scott and Mark Learn To..." podcast 
 ├── youtube_downloader.py       # YouTube audio downloader
 ├── youtube_scraper.py          # YouTube playlist scraper
 ├── requirements.txt            # Python dependencies
+├── test_real_audio.py          # Audio processing tests
+├── test_real_download.py       # Download functionality tests
+├── test_focused_download.py    # Targeted download tests
 ├── static/                     # Web frontend assets
 │   ├── index.html             # Main dashboard
 │   ├── style.css              # Responsive styling
@@ -119,11 +122,10 @@ A modern web application for analyzing the "Scott and Mark Learn To..." podcast 
 ├── data/                       # Data storage
 │   ├── audio_cache/           # Downloaded audio files (gitignored)
 │   ├── episodes.json          # Episode metadata
-│   └── processed_episodes.json # Analysis results
-└── tests/                      # Testing utilities
-    ├── test_real_audio.py     # Audio processing tests
-    ├── test_real_download.py  # Download functionality tests
-    └── test_focused_download.py # Targeted download tests
+│   ├── processed_episodes.json # Analysis results
+│   ├── voice_mark.mp3         # Mark's voice sample
+│   └── voice_scott.mp3        # Scott's voice sample
+└── prompts.txt                 # Project context and development history
 ```
 
 ## 🔧 API Endpoints
