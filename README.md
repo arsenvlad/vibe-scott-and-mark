@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Scott and Mark Learn To... - Podcast Analytics
 
 A modern web application for analyzing the "Scott and Mark Learn To..." podcast using AI-powered speech-to-text transcription and speaker identification.
