@@ -316,11 +316,22 @@ class PodcastAudioProcessor:
         Complete processing pipeline for a single episode.
         """
         audio_path = None
+        use_cached = False
         try:
             logger.info(f"Starting real audio processing for episode {video_id}")
             
-            # Step 1: Download audio
-            audio_path = self.download_audio(video_url, video_id)
+            # Step 1: Check for cached audio first
+            from youtube_downloader import YouTubeAudioDownloader
+            downloader = YouTubeAudioDownloader()
+            cached_audio_path = downloader.get_cached_audio_path(video_id)
+            
+            if cached_audio_path:
+                logger.info(f"Using cached audio file: {cached_audio_path}")
+                audio_path = cached_audio_path
+                use_cached = True
+            else:
+                # Step 1b: Download audio to temp if not cached
+                audio_path = self.download_audio(video_url, video_id)
             
             # Step 2: Transcribe audio
             transcription_chunks = self.transcribe_with_whisper(audio_path)
@@ -357,11 +368,11 @@ class PodcastAudioProcessor:
             }
         
         finally:
-            # Clean up downloaded audio file
-            if audio_path and os.path.exists(audio_path):
+            # Clean up downloaded audio file (but not cached files)
+            if audio_path and os.path.exists(audio_path) and not use_cached:
                 try:
                     os.remove(audio_path)
-                    logger.info(f"Cleaned up audio file: {audio_path}")
+                    logger.info(f"Cleaned up temporary audio file: {audio_path}")
                 except Exception as e:
                     logger.warning(f"Could not remove audio file {audio_path}: {e}")
 

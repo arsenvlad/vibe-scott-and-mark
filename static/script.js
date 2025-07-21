@@ -147,7 +147,7 @@ class PodcastAnalytics {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    video_url: episode.video_url,
+                    video_url: episode.url,
                     video_id: videoId
                 })
             });

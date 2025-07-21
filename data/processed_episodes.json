@@ -1,39 +1,118 @@
 {
-  "UmXW8nGG9ZE": {
-    "processed_at": "2025-07-20T19:41:05.081221",
-    "analysis": {
-      "total_words": 1001,
-      "scott_words": 395,
-      "mark_words": 606,
-      "scott_percentage": 39,
-      "mark_percentage": 61,
-      "segments_analyzed": 104,
-      "scott_segments": 52,
-      "mark_segments": 52,
-      "processing_note": "Enhanced mock data based on real voice sample transcription. YouTube download blocked, using realistic estimates scaled from actual voice patterns.",
+  "NTFgywWXpw8": {
+    "processed_at": "2025-07-20T22:46:29.517643",
+    "method": "real_audio_analysis",
+    "results": {
+      "total_words": 549,
+      "scott_words": 348,
+      "mark_words": 201,
+      "scott_percentage": 63,
+      "mark_percentage": 37,
+      "segments_analyzed": 69,
+      "scott_segments": 41,
+      "mark_segments": 28,
+      "processing_note": "Real audio processing completed at 2025-07-20T22:46:29.515897",
       "sample_transcription": [
         {
-          "text": "I remember what it was like to not work here.",
-          "start": 0.0,
-          "end": 2.24
+          "text": "The world is littered with podcasts with nine episodes.",
+          "start": 3.6399999999999997,
+          "end": 6.24,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
         },
         {
-          "text": "I will not work here in the future.",
-          "start": 2.34,
-          "end": 4.1
+          "text": "And for a long time, there are, and usually each episode, at the beginning of each episode,",
+          "start": 7.08,
+          "end": 12.0,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 0.0
         },
         {
-          "text": "Yeah, that's kind of cool idea.",
-          "start": 0.0,
-          "end": 2.08
+          "text": "is an apology for the podcast not being more regular.",
+          "start": 12.04,
+          "end": 15.76,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
         },
         {
-          "text": "I've got a couple projects I'm bycoding, but one of them is just about done, but it's been painful.",
-          "start": 3.6,
-          "end": 9.88
+          "text": "The first episode is very triumphant.",
+          "start": 16.32,
+          "end": 17.78,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Welcome to the show.",
+          "start": 18.14,
+          "end": 19.02,
+          "speaker": "scott",
+          "scott_score": 0.5,
+          "mark_score": 0.0
         }
       ],
-      "enhanced_mock": true
+      "full_transcription_available": true
+    }
+  },
+  "G5IguDmvtjo": {
+    "processed_at": "2025-07-20T22:52:21.812252",
+    "method": "real_audio_analysis",
+    "results": {
+      "total_words": 2169,
+      "scott_words": 1167,
+      "mark_words": 1002,
+      "scott_percentage": 54,
+      "mark_percentage": 46,
+      "segments_analyzed": 349,
+      "scott_segments": 182,
+      "mark_segments": 167,
+      "processing_note": "Real audio processing completed at 2025-07-20T22:52:21.772590",
+      "sample_transcription": [
+        {
+          "text": "Yeah. Are we going to be influencers then?",
+          "start": 0.0,
+          "end": 2.04,
+          "speaker": "scott",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I feel very influenced. All right.",
+          "start": 4.06,
+          "end": 6.4,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Do you do dances? No, I don't. I'm like, catch. I just live right here. That's me.",
+          "start": 7.54,
+          "end": 13.7,
+          "speaker": "scott",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Yeah. After I stay. All right. We have, uh, I think you should stay.",
+          "start": 13.84,
+          "end": 20.14,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I'd appreciate that. You can't dance because you're",
+          "start": 20.7,
+          "end": 23.84,
+          "speaker": "scott",
+          "scott_score": 0.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
     }
   }
 }

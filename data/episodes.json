@@ -5,46 +5,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich discuss innovative tools they built with AI assistance: Mark’s smart directory navigation tool that streamlines moving through nested folders by typing partial names, and Scott’s study website that transforms complex topics into structured, digestible material with AI-generated answers and progress tracking. They explore the challenges of AI “hallucination,” where models invent detailed but fictional information, and share insights on computer science history, including Leslie Lamport’s contributions. Their conversation also touches on evolving UI design trends from minimalist styles to flashy effects like “liquid glass” and debates the balance between aesthetics, usability, and energy efficiency in modern technology. \n\nListen to other episodes at https://scottandmarklearn.to     \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts    \n\n\nCode: 5Q6MBEQYU7GRVDVG",
     "duration_seconds": 1598,
     "duration_formatted": "26:38",
-    "view_count": 5173,
+    "view_count": 5190,
     "upload_date": "20250709",
     "upload_date_formatted": "July 09, 2025",
     "uploader": "Scott Hanselman",
-    "thumbnail": "https://i.ytimg.com/vi/UmXW8nGG9ZE/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/UmXW8nGG9ZE/hqdefault.jpg?v=686d528b",
     "url": "https://www.youtube.com/watch?v=UmXW8nGG9ZE",
     "episode_number": 20,
-    "fetched_at": "2025-07-20T19:11:29.273323",
-    "total_words": 1001,
-    "scott_words": 395,
-    "mark_words": 606,
-    "scott_percentage": 39,
-    "mark_percentage": 61,
-    "segments_analyzed": 104,
-    "processing_note": "Enhanced mock data based on real voice sample transcription. YouTube download blocked, using realistic estimates scaled from actual voice patterns.",
-    "scott_segments": 52,
-    "mark_segments": 52,
-    "sample_transcription": [
-      {
-        "text": "I remember what it was like to not work here.",
-        "start": 0.0,
-        "end": 2.24
-      },
-      {
-        "text": "I will not work here in the future.",
-        "start": 2.34,
-        "end": 4.1
-      },
-      {
-        "text": "Yeah, that's kind of cool idea.",
-        "start": 0.0,
-        "end": 2.08
-      },
-      {
-        "text": "I've got a couple projects I'm bycoding, but one of them is just about done, but it's been painful.",
-        "start": 3.6,
-        "end": 9.88
-      }
-    ],
-    "enhanced_mock": true
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "SGk9iampcZw",
@@ -52,21 +20,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich Scott shares the behind-the-scenes stress and preparation that went into his recent TEDx talk, which required memorizing a 12-minute script and performing it without a teleprompter. Mark Russinovich opens up about how he experiences stress when his schedule gets out of control, and both hosts discuss the importance of mindfulness, exercise, having work besties, and managing social energy. The episode is packed with practical tips, vulnerable moments, and reflections on what it really takes to perform at a high level, whether it’s on stage, at work, or in life.  \n\nListen to other episodes at https://scottandmarklearn.to     \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts    \n\n\nCode: KZMAP1HVIOK2NEQQ",
     "duration_seconds": 1712,
     "duration_formatted": "28:32",
-    "view_count": 6868,
+    "view_count": 6876,
     "upload_date": "20250625",
     "upload_date_formatted": "June 25, 2025",
     "uploader": "Scott Hanselman",
-    "thumbnail": "https://i.ytimg.com/vi/SGk9iampcZw/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/SGk9iampcZw/hqdefault.jpg?v=685af39b",
     "url": "https://www.youtube.com/watch?v=SGk9iampcZw",
     "episode_number": 19,
-    "fetched_at": "2025-07-20T19:11:29.274316",
-    "total_words": 4280,
-    "scott_words": 2439,
-    "mark_words": 1841,
-    "scott_percentage": 57,
-    "mark_percentage": 43,
-    "segments_analyzed": 19,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "ukzbSO1fUAY",
@@ -74,21 +35,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich dive deep into the topic of self-promotion, visibility, and personal branding. They explore the blurry lines between promoting your work, representing your company, and building a personal brand—whether intentional or not. With humor, honesty, and vulnerability, they reflect on online criticism, handling stress, and the challenge of staying authentic while being visible.  \n\n Listen to other episodes at https://scottandmarklearn.to     \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts    \n\n\nCode: HMRKBCMCFFS09GHM",
     "duration_seconds": 1347,
     "duration_formatted": "22:27",
-    "view_count": 4924,
+    "view_count": 4926,
     "upload_date": "20250611",
     "upload_date_formatted": "June 11, 2025",
     "uploader": "Scott Hanselman",
-    "thumbnail": "https://i.ytimg.com/vi/ukzbSO1fUAY/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/ukzbSO1fUAY/hqdefault.jpg?v=68487e64",
     "url": "https://www.youtube.com/watch?v=ukzbSO1fUAY",
     "episode_number": 18,
-    "fetched_at": "2025-07-20T19:11:29.274316",
-    "total_words": 3367,
-    "scott_words": 1683,
-    "mark_words": 1684,
-    "scott_percentage": 50,
-    "mark_percentage": 50,
-    "segments_analyzed": 34,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "IYj6tj3bhsA",
@@ -100,17 +54,10 @@
     "upload_date": "20250528",
     "upload_date_formatted": "May 28, 2025",
     "uploader": "Scott Hanselman",
-    "thumbnail": "https://i.ytimg.com/vi/IYj6tj3bhsA/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/IYj6tj3bhsA/hqdefault.jpg?v=68361c6b",
     "url": "https://www.youtube.com/watch?v=IYj6tj3bhsA",
     "episode_number": 17,
-    "fetched_at": "2025-07-20T19:11:29.274316",
-    "total_words": 4360,
-    "scott_words": 1744,
-    "mark_words": 2616,
-    "scott_percentage": 40,
-    "mark_percentage": 60,
-    "segments_analyzed": 50,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "yYcEiNkdkyo",
@@ -118,21 +65,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich dive into the emotional complexity of receiving feedback—especially when it’s tough to hear. They explore the difference between constructive critique and personal opinion, the impact of timing and context, and how motivation behind feedback can shape how it's received. Sharing real stories about presentation flops, speaker coaching, and surprising reactions to their ideas, they reflect on how experience builds resilience and why it’s important to hold onto your convictions while staying open to growth. They also touch on the balance between instinct and data in decision-making, the subtle politics of corporate resistance, and even the fine art of surviving massive Zoom meetings with 81 attendees. It’s an honest, funny, and thoughtful conversation about learning, evolving, and breathing through it all. \n\nListen to other episodes at https://scottandmarklearn.to     \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts    \n\n\nCode: VUWQXEZ8UUCEYRN9",
     "duration_seconds": 1599,
     "duration_formatted": "26:39",
-    "view_count": 4817,
+    "view_count": 4818,
     "upload_date": "20250514",
     "upload_date_formatted": "May 14, 2025",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/yYcEiNkdkyo/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=yYcEiNkdkyo",
     "episode_number": 16,
-    "fetched_at": "2025-07-20T19:11:29.275233",
-    "total_words": 3997,
-    "scott_words": 1998,
-    "mark_words": 1999,
-    "scott_percentage": 50,
-    "mark_percentage": 50,
-    "segments_analyzed": 42,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "xcaKYRgTvys",
@@ -144,17 +84,10 @@
     "upload_date": "20250430",
     "upload_date_formatted": "April 30, 2025",
     "uploader": "Scott Hanselman",
-    "thumbnail": "https://i.ytimg.com/vi/xcaKYRgTvys/hqdefault.jpg",
+    "thumbnail": "https://i.ytimg.com/vi/xcaKYRgTvys/hqdefault.jpg?v=681118fa",
     "url": "https://www.youtube.com/watch?v=xcaKYRgTvys",
     "episode_number": 15,
-    "fetched_at": "2025-07-20T19:11:29.275233",
-    "total_words": 4085,
-    "scott_words": 1838,
-    "mark_words": 2247,
-    "scott_percentage": 45,
-    "mark_percentage": 55,
-    "segments_analyzed": 19,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "BZQnqqy2Of0",
@@ -169,14 +102,7 @@
     "thumbnail": "https://i.ytimg.com/vi/BZQnqqy2Of0/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=BZQnqqy2Of0",
     "episode_number": 14,
-    "fetched_at": "2025-07-20T19:11:29.275233",
-    "total_words": 5147,
-    "scott_words": 3036,
-    "mark_words": 2111,
-    "scott_percentage": 59,
-    "mark_percentage": 41,
-    "segments_analyzed": 25,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "gUOExMkZCrM",
@@ -191,14 +117,7 @@
     "thumbnail": "https://i.ytimg.com/vi/gUOExMkZCrM/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=gUOExMkZCrM",
     "episode_number": 13,
-    "fetched_at": "2025-07-20T19:11:29.275233",
-    "total_words": 2257,
-    "scott_words": 1151,
-    "mark_words": 1106,
-    "scott_percentage": 51,
-    "mark_percentage": 49,
-    "segments_analyzed": 17,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "iC_Oxfsimw0",
@@ -213,14 +132,7 @@
     "thumbnail": "https://i.ytimg.com/vi/iC_Oxfsimw0/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=iC_Oxfsimw0",
     "episode_number": 12,
-    "fetched_at": "2025-07-20T19:11:29.276236",
-    "total_words": 3465,
-    "scott_words": 1871,
-    "mark_words": 1594,
-    "scott_percentage": 54,
-    "mark_percentage": 46,
-    "segments_analyzed": 25,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "PjInF4wbmxM",
@@ -228,21 +140,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich dive into the concept of systems thinking—what it means, why it matters, and how it applies beyond just coding. Scott recalls an insightful conversation with a colleague, who argues that while younger generations are taught to code, they aren’t taught to understand the larger systems in which code operates. They discussed how systems thinking approach contrasts with traditional code practices. They also explored the challenges of integrating AI into coding, the limitations of AI-generated code, the necessity of understanding the broader system in which code operates and debated the balance between deep analysis and decisive action. \n\nListen to other episodes at https://scottandmarklearn.to   \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts   \n\n \nCode: YBTV1CWFHX9ENPTY",
     "duration_seconds": 1951,
     "duration_formatted": "32:31",
-    "view_count": 12227,
+    "view_count": 12228,
     "upload_date": "20250305",
     "upload_date_formatted": "March 05, 2025",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/PjInF4wbmxM/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=PjInF4wbmxM",
     "episode_number": 11,
-    "fetched_at": "2025-07-20T19:11:29.276236",
-    "total_words": 4877,
-    "scott_words": 2682,
-    "mark_words": 2195,
-    "scott_percentage": 55,
-    "mark_percentage": 45,
-    "segments_analyzed": 47,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "8WEoZ646Ikk",
@@ -257,14 +162,7 @@
     "thumbnail": "https://i.ytimg.com/vi/8WEoZ646Ikk/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=8WEoZ646Ikk",
     "episode_number": 10,
-    "fetched_at": "2025-07-20T19:11:29.276236",
-    "total_words": 3665,
-    "scott_words": 1685,
-    "mark_words": 1980,
-    "scott_percentage": 46,
-    "mark_percentage": 54,
-    "segments_analyzed": 39,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "X2jrg7r4gOY",
@@ -279,14 +177,7 @@
     "thumbnail": "https://i.ytimg.com/vi/X2jrg7r4gOY/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=X2jrg7r4gOY",
     "episode_number": 9,
-    "fetched_at": "2025-07-20T19:11:29.277231",
-    "total_words": 4740,
-    "scott_words": 2796,
-    "mark_words": 1944,
-    "scott_percentage": 59,
-    "mark_percentage": 41,
-    "segments_analyzed": 32,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "SUpiZMwJn54",
@@ -301,14 +192,7 @@
     "thumbnail": "https://i.ytimg.com/vi/SUpiZMwJn54/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=SUpiZMwJn54",
     "episode_number": 8,
-    "fetched_at": "2025-07-20T19:11:29.277231",
-    "total_words": 5592,
-    "scott_words": 2907,
-    "mark_words": 2685,
-    "scott_percentage": 52,
-    "mark_percentage": 48,
-    "segments_analyzed": 32,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "Ypcog_lv0DA",
@@ -323,14 +207,7 @@
     "thumbnail": "https://i.ytimg.com/vi/Ypcog_lv0DA/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Ypcog_lv0DA",
     "episode_number": 7,
-    "fetched_at": "2025-07-20T19:11:29.277888",
-    "total_words": 4470,
-    "scott_words": 2100,
-    "mark_words": 2370,
-    "scott_percentage": 47,
-    "mark_percentage": 53,
-    "segments_analyzed": 20,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "Jhga7FOB2XA",
@@ -338,21 +215,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich delve into the critical developer skill of debugging crash dump files, both kernel dumps and application dumps. They start sharing insights from their experiences with blue screens and system crashes. They discuss tools like WinDBG (\"Windbag\") for analyzing dump files and demonstrate \"Not My Fault,\" a tool for simulating crashes. Mark also showcases Procdump, highlighting its advanced features for capturing dumps with conditional triggers, such as high CPU usage or memory leaks, and explains why it outshines manual methods like Task Manager. \n\nListen to other episodes at https://scottandmarklearn.to   \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts   \n\n\nCode: 6PSCH4IQK0IS6BBT",
     "duration_seconds": 1749,
     "duration_formatted": "29:09",
-    "view_count": 7901,
+    "view_count": 7902,
     "upload_date": "20241211",
     "upload_date_formatted": "December 11, 2024",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/Jhga7FOB2XA/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Jhga7FOB2XA",
     "episode_number": 6,
-    "fetched_at": "2025-07-20T19:11:29.277888",
-    "total_words": 4372,
-    "scott_words": 2229,
-    "mark_words": 2143,
-    "scott_percentage": 51,
-    "mark_percentage": 49,
-    "segments_analyzed": 30,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "FWMWgqs3ARw",
@@ -360,21 +230,14 @@
     "description": "In this episode of Scott and Mark Learn To, Scott Hanselman and Mark Russinovich delve into the intricate world of undocumented APIs, examining their associated risks and benefits. Mark shares his journey into reverse engineering, starting with the Apple II and evolving through his exploration of Windows internals. He elaborates on his PhD thesis on fault management, which sparked his interest in undocumented APIs. The conversation includes technical insights into disassembling and debugging, showcasing Mark’s development of his own disassembler and use of tools like SoftICE for kernel debugging. They also explore Microsoft’s rationale for keeping certain APIs undocumented, highlighting the importance of flexibility in system evolution without compromising application stability. \n\nListen to other episodes at https://scottandmarklearn.to   \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts   \n\n\nCode: Q4TI1OFEYGXPXQSB",
     "duration_seconds": 1234,
     "duration_formatted": "20:34",
-    "view_count": 10475,
+    "view_count": 10477,
     "upload_date": "20241127",
     "upload_date_formatted": "November 27, 2024",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/FWMWgqs3ARw/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=FWMWgqs3ARw",
     "episode_number": 5,
-    "fetched_at": "2025-07-20T19:11:29.277888",
-    "total_words": 3085,
-    "scott_words": 1480,
-    "mark_words": 1605,
-    "scott_percentage": 48,
-    "mark_percentage": 52,
-    "segments_analyzed": 28,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "G5IguDmvtjo",
@@ -382,21 +245,14 @@
     "description": "In this bonus episode of Scott & Mark Learn To, Scott Hanselman and Mark Russinovich take a detour into the fabulous world of skincare, proving that everyone deserves a little TLC! With Scott both amused and bewildered by Mark's radiant complexion, they launch into a lively debate about grooming habits. From the champagne of shampoos to moisturizing rituals and the must-have essentials for looking sharp in the tech world, Scott and Mark share their best beauty tips. Plus, discover the profound truth that “you can’t have too many moisturizers”—unless you're Mark, who insists that sometimes, less is more! \n\nListen to other episodes at https://scottandmarklearn.to  \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts   \n\n\nCode: ZXNCSDSNH1ALLJKB",
     "duration_seconds": 710,
     "duration_formatted": "11:50",
-    "view_count": 5183,
+    "view_count": 5184,
     "upload_date": "20241118",
     "upload_date_formatted": "November 18, 2024",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/G5IguDmvtjo/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=G5IguDmvtjo",
     "episode_number": null,
-    "fetched_at": "2025-07-20T19:11:29.278949",
-    "total_words": 1775,
-    "scott_words": 710,
-    "mark_words": 1065,
-    "scott_percentage": 40,
-    "mark_percentage": 60,
-    "segments_analyzed": 43,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "2aKfztEnN7k",
@@ -404,21 +260,14 @@
     "description": "In this episode of Scott & Mark Learn To, Scott Hanselman and Mark Russinovich dive into the quirks and philosophies of programming languages—debating the purpose of small languages, like Erlang, versus giants like JavaScript. Along the way, they discuss whether modern languages with hindsight (like Kotlin) are inherently better and reminisce about the good old days of writing code in C, Delphi, and even 6502 assembler. Mark reflects on transitioning to Rust for system-level code in Azure, marking a deliberate move away from C/C++. He highlights Rust’s ownership model, memory safety, and enforced concurrency as the game-changers. Meanwhile, Scott is poking fun at the oddities of language trends, including Python’s rise to dominance in machine learning.   \n\nListen to other episodes at https://scottandmarklearn.to  \n\nDiscover other Microsoft podcasts at https://microsoft.com/podcasts   \n\n\nCode: LDEQICH6FI4STFJY",
     "duration_seconds": 1621,
     "duration_formatted": "27:01",
-    "view_count": 11471,
+    "view_count": 11472,
     "upload_date": "20241113",
     "upload_date_formatted": "November 13, 2024",
     "uploader": "Scott Hanselman",
     "thumbnail": "https://i.ytimg.com/vi/2aKfztEnN7k/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=2aKfztEnN7k",
     "episode_number": 4,
-    "fetched_at": "2025-07-20T19:11:29.278949",
-    "total_words": 4052,
-    "scott_words": 2026,
-    "mark_words": 2026,
-    "scott_percentage": 50,
-    "mark_percentage": 50,
-    "segments_analyzed": 35,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "RpV5EucK43U",
@@ -433,14 +282,7 @@
     "thumbnail": "https://i.ytimg.com/vi/RpV5EucK43U/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RpV5EucK43U",
     "episode_number": 3,
-    "fetched_at": "2025-07-20T19:11:29.279961",
-    "total_words": 4707,
-    "scott_words": 2682,
-    "mark_words": 2025,
-    "scott_percentage": 57,
-    "mark_percentage": 43,
-    "segments_analyzed": 48,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "Z1yYcUFzH2A",
@@ -455,14 +297,7 @@
     "thumbnail": "https://i.ytimg.com/vi_webp/Z1yYcUFzH2A/maxresdefault.webp",
     "url": "https://www.youtube.com/watch?v=Z1yYcUFzH2A",
     "episode_number": 2,
-    "fetched_at": "2025-07-20T19:11:29.279961",
-    "total_words": 3335,
-    "scott_words": 1734,
-    "mark_words": 1601,
-    "scott_percentage": 52,
-    "mark_percentage": 48,
-    "segments_analyzed": 18,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "JxRLX4VGuYg",
@@ -477,14 +312,7 @@
     "thumbnail": "https://i.ytimg.com/vi/JxRLX4VGuYg/maxresdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JxRLX4VGuYg",
     "episode_number": 1,
-    "fetched_at": "2025-07-20T19:11:29.279961",
-    "total_words": 3057,
-    "scott_words": 1650,
-    "mark_words": 1407,
-    "scott_percentage": 54,
-    "mark_percentage": 46,
-    "segments_analyzed": 39,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   },
   {
     "video_id": "NTFgywWXpw8",
@@ -499,13 +327,6 @@
     "thumbnail": "https://i.ytimg.com/vi_webp/NTFgywWXpw8/maxresdefault.webp",
     "url": "https://www.youtube.com/watch?v=NTFgywWXpw8",
     "episode_number": null,
-    "fetched_at": "2025-07-20T19:11:29.279961",
-    "total_words": 505,
-    "scott_words": 222,
-    "mark_words": 283,
-    "scott_percentage": 44,
-    "mark_percentage": 56,
-    "segments_analyzed": 35,
-    "processing_note": "This is mock data for demonstration. Real audio processing would provide actual results."
+    "fetched_at": "2025-07-20T22:25:52.970594"
   }
 ]

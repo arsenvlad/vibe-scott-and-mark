@@ -67,9 +67,32 @@ def index():
 
 @app.route('/api/episodes')
 def get_episodes():
-    """Get all episodes data"""
+    """Get all episodes data with processing status"""
     try:
         episodes = load_episodes_data()
+        processed_data = load_processed_data()
+        
+        # Merge processed data with episodes
+        for episode in episodes:
+            video_id = episode.get('video_id')
+            if video_id in processed_data:
+                # Check both 'analysis' and 'results' keys for backward compatibility
+                analysis = processed_data[video_id].get('analysis', {})
+                if not analysis:
+                    analysis = processed_data[video_id].get('results', {})
+                
+                # Add analysis data to episode
+                episode.update(analysis)
+                episode['is_processed'] = True
+                episode['processed_at'] = processed_data[video_id].get('processed_at')
+            else:
+                episode['is_processed'] = False
+                episode['total_words'] = 0
+                episode['scott_words'] = 0
+                episode['mark_words'] = 0
+                episode['scott_percentage'] = 0
+                episode['mark_percentage'] = 0
+        
         return jsonify({
             'success': True,
             'episodes': episodes,
@@ -147,9 +170,26 @@ def process_episode_audio(video_id):
             from audio_processor import PodcastAudioProcessor
             
             logger.info(f"Attempting real audio processing for episode {video_id}")
-            processor = PodcastAudioProcessor()
             
-            # Try to process the episode audio
+            # Step 1: Ensure audio is cached using YouTubeAudioDownloader
+            logger.info(f"Ensuring audio is cached for {video_id}")
+            cached_path = youtube_downloader.get_cached_audio_path(video_id)
+            
+            if not cached_path:
+                logger.info(f"Audio not cached, downloading to cache for {video_id}")
+                try:
+                    cached_path = youtube_downloader.download_audio(episode['url'], video_id)
+                    if not cached_path:
+                        raise Exception("Failed to download and cache audio")
+                    logger.info(f"Successfully cached audio at: {cached_path}")
+                except Exception as download_error:
+                    logger.error(f"Failed to cache audio: {download_error}")
+                    raise Exception(f"Audio caching failed: {download_error}")
+            else:
+                logger.info(f"Using existing cached audio: {cached_path}")
+            
+            # Step 2: Process the episode (will now use cached audio)
+            processor = PodcastAudioProcessor()
             analysis_result = processor.process_episode(episode['url'], video_id)
             
             # If real processing succeeded
@@ -350,7 +390,11 @@ def get_statistics():
         mark_words = 0
         
         for video_id, data in processed_data.items():
+            # Check both 'analysis' and 'results' keys for backward compatibility
             analysis = data.get('analysis', {})
+            if not analysis:
+                analysis = data.get('results', {})
+            
             total_words += analysis.get('total_words', 0)
             scott_words += analysis.get('scott_words', 0)
             mark_words += analysis.get('mark_words', 0)
