@@ -55,5 +55,1202 @@
       ],
       "full_transcription_available": true
     }
+  },
+  "G5IguDmvtjo": {
+    "processed_at": "2025-07-20T23:50:23.573158",
+    "analysis": {
+      "total_words": 2147,
+      "scott_words": 1531,
+      "mark_words": 616,
+      "scott_percentage": 71,
+      "mark_percentage": 29,
+      "segments_analyzed": 119,
+      "scott_segments": 85,
+      "mark_segments": 34,
+      "processing_note": "Real audio processing completed at 2025-07-20T23:50:23.573158",
+      "sample_transcription": [
+        {
+          "text": "Yeah. Are we going to be influencers then?",
+          "start": 0.0,
+          "end": 2.0,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I feel very influenced. All right.",
+          "start": 3.980000000000003,
+          "end": 6.36,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Do you do dances? No, I don't. I'm like catch.",
+          "start": 7.5,
+          "end": 11.38,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I just live right here. That's me. Yeah. After I stay.",
+          "start": 12.12,
+          "end": 15.22,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "All right. We have. I think you should stay. I appreciate that.",
+          "start": 16.940000000000005,
+          "end": 22.02,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "UmXW8nGG9ZE": {
+    "processed_at": "2025-07-21T00:21:21.908743",
+    "analysis": {
+      "total_words": 4248,
+      "scott_words": 2735,
+      "mark_words": 1513,
+      "scott_percentage": 64,
+      "mark_percentage": 36,
+      "segments_analyzed": 566,
+      "scott_segments": 348,
+      "mark_segments": 218,
+      "processing_note": "Real audio processing completed at 2025-07-21T00:21:21.908743",
+      "sample_transcription": [
+        {
+          "text": "Ich wette übrigens, ich habe in letzter Zeit so viel mit wie programmiert, ich habe einen",
+          "start": 2.659999999999998,
+          "end": 7.9,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "LLM Studienführer erstellt.",
+          "start": 7.9,
+          "end": 9.88,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Jay hat mir einen LLM Studienführer geschickt, eine Liste mit Interviewfragen, die er auf",
+          "start": 10.44,
+          "end": 16.58,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "linkt in gefunden hat.",
+          "start": 16.58,
+          "end": 17.92,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Ja, ich habe also einen erstellt, sie dir das mal an, ich habe ein, es ist ein sehr,",
+          "start": 19.539999999999996,
+          "end": 25.94,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "SGk9iampcZw": {
+    "processed_at": "2025-07-21T00:50:59.836202",
+    "analysis": {
+      "total_words": 4930,
+      "scott_words": 3012,
+      "mark_words": 1918,
+      "scott_percentage": 61,
+      "mark_percentage": 39,
+      "segments_analyzed": 546,
+      "scott_segments": 338,
+      "mark_segments": 208,
+      "processing_note": "Real audio processing completed at 2025-07-21T00:50:59.836202",
+      "sample_transcription": [
+        {
+          "text": "Eines der Dinge, über die wir in der letzten Folge ein wenig gesprochen haben, ist, dass",
+          "start": 3.139999999999998,
+          "end": 8.06,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "mich der Tätvortrag stresst.",
+          "start": 8.06,
+          "end": 10.12,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "M, und im allgemeinen Glaube ich nicht, dass ich gestresst präsentiere.",
+          "start": 10.3,
+          "end": 14.9,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Ich präsentiere vielleicht wie ein Typ A oder Sprühe vor Begeisterung oder was auch",
+          "start": 15.8,
+          "end": 20.84,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "immer, aber ich flippe kurz vor einem Vortrag ein wenig aus.",
+          "start": 20.84,
+          "end": 24.46,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "ukzbSO1fUAY": {
+    "processed_at": "2025-07-21T01:27:40.309259",
+    "analysis": {
+      "total_words": 3780,
+      "scott_words": 2526,
+      "mark_words": 1254,
+      "scott_percentage": 67,
+      "mark_percentage": 33,
+      "segments_analyzed": 745,
+      "scott_segments": 475,
+      "mark_segments": 270,
+      "processing_note": "Real audio processing completed at 2025-07-21T01:27:40.309259",
+      "sample_transcription": [
+        {
+          "text": "Zweite Sache, bist du jemals gestresst?",
+          "start": 3.3200000000000016,
+          "end": 6.12,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Ja, die ganze Zeit.",
+          "start": 6.32,
+          "end": 7.62,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Ok, also, lernen mit Stress umzugehen.",
+          "start": 7.9,
+          "end": 10.66,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Ich glaube, ich habe dir erzählt, dass ich gerade diesen Tätvortrag in Portland gehalten",
+          "start": 10.82,
+          "end": 14.74,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "habe und der hat mich fast umgebracht.",
+          "start": 14.74,
+          "end": 16.7,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "IYj6tj3bhsA": {
+    "processed_at": "2025-07-21T02:01:09.637295",
+    "analysis": {
+      "total_words": 4227,
+      "scott_words": 2174,
+      "mark_words": 2053,
+      "scott_percentage": 51,
+      "mark_percentage": 49,
+      "segments_analyzed": 587,
+      "scott_segments": 306,
+      "mark_segments": 281,
+      "processing_note": "Real audio processing completed at 2025-07-21T02:01:09.637295",
+      "sample_transcription": [
+        {
+          "text": "La otra parte que creo que es maravilloso que nuestros oyentes sepan es que cuando trabajo",
+          "start": 3.8199999999999994,
+          "end": 8.2,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "con Mark o con Scott, Scott Hunter, dada su avanzada edad, son muchos más años mayores que",
+          "start": 8.2,
+          "end": 13.5,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "yo.",
+          "start": 13.5,
+          "end": 13.68,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Es un genio, tiene un doctorado, es director de tecnología, es director ejecutivo adjunto,",
+          "start": 14.22,
+          "end": 18.46,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "tiene todas estas cosas increíbles.",
+          "start": 18.56,
+          "end": 20.06,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "yYcEiNkdkyo": {
+    "processed_at": "2025-07-21T02:16:50.368993",
+    "analysis": {
+      "total_words": 4390,
+      "scott_words": 2305,
+      "mark_words": 2085,
+      "scott_percentage": 53,
+      "mark_percentage": 47,
+      "segments_analyzed": 185,
+      "scott_segments": 102,
+      "mark_segments": 83,
+      "processing_note": "Real audio processing completed at 2025-07-21T02:16:50.368993",
+      "sample_transcription": [
+        {
+          "text": "Ich halte in ein paar Wochen einen Tätvortrag und M. Ich war heute bei dem Speaker Coaching.",
+          "start": 2.1599999999999997,
+          "end": 8.1,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Das hat mich fertig gemacht. Die haben es gehast, echt den ganzen Vortrag umgestalten.",
+          "start": 8.78,
+          "end": 12.76,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Meinst, du das ernst? Ja, ja, haben die nicht gesagt, dass das hier kein Vortrag ist, das ist nicht genug.",
+          "start": 13.12,
+          "end": 18.44,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Wow, also muss ich das mal eben rausfinden. Hat dich schon mal jemand zum Proben gezwungen?",
+          "start": 19.58,
+          "end": 25.5,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Ja, das Ganze aufzuschreiben und auswendig zu lernen. Das mag ich nicht. Ich hasse es. Ich hasse es. Ich hasse es. Ich hasse es.",
+          "start": 25.5,
+          "end": 31.3,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "xcaKYRgTvys": {
+    "processed_at": "2025-07-21T02:32:34.688711",
+    "analysis": {
+      "total_words": 4408,
+      "scott_words": 2442,
+      "mark_words": 1966,
+      "scott_percentage": 55,
+      "mark_percentage": 45,
+      "segments_analyzed": 206,
+      "scott_segments": 114,
+      "mark_segments": 92,
+      "processing_note": "Real audio processing completed at 2025-07-21T02:32:34.688711",
+      "sample_transcription": [
+        {
+          "text": "Eine ist der Dinge über Weibcoating ist, dass wir nicht über Tag 1 und die Auswirkungen",
+          "start": 4.939999999999999,
+          "end": 9.8,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "und die Komplexität von Weibcoating und SC gesprochen haben, die wir bereits angeschnitten",
+          "start": 9.8,
+          "end": 14.78,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "haben.",
+          "start": 14.78,
+          "end": 15.2,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Nun, wir könnten einen zweiten Teil von Weibcoating machen, indem wir einfach nur über",
+          "start": 15.42,
+          "end": 19.58,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Braunfield-Gerienviel sprechen.",
+          "start": 19.58,
+          "end": 20.84,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "BZQnqqy2Of0": {
+    "processed_at": "2025-07-21T03:17:50.422575",
+    "analysis": {
+      "total_words": 4638,
+      "scott_words": 2504,
+      "mark_words": 2134,
+      "scott_percentage": 54,
+      "mark_percentage": 46,
+      "segments_analyzed": 697,
+      "scott_segments": 381,
+      "mark_segments": 316,
+      "processing_note": "Real audio processing completed at 2025-07-21T03:17:50.422575",
+      "sample_transcription": [
+        {
+          "text": "Ach ja, Alter, der Vortrag über den Bau.",
+          "start": 2.7400000000000078,
+          "end": 5.46,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Ja, er nimmt langsam gestalt an.",
+          "start": 6.0,
+          "end": 7.62,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Punkt, die Leute engagieren sich.",
+          "start": 7.8,
+          "end": 9.14,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Es kommt Bewegung in die Sache.",
+          "start": 9.34,
+          "end": 10.44,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Die Leute fragen sich, wird das ein Erfolg?",
+          "start": 10.72,
+          "end": 13.34,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "gUOExMkZCrM": {
+    "processed_at": "2025-07-21T03:30:30.515484",
+    "analysis": {
+      "total_words": 2281,
+      "scott_words": 1359,
+      "mark_words": 922,
+      "scott_percentage": 60,
+      "mark_percentage": 40,
+      "segments_analyzed": 352,
+      "scott_segments": 209,
+      "mark_segments": 143,
+      "processing_note": "Real audio processing completed at 2025-07-21T03:30:30.515484",
+      "sample_transcription": [
+        {
+          "text": "Es sollte ein Wort sein.",
+          "start": 1.4799999999999995,
+          "end": 3.14,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Es ist so, ey, wissen Sie ein anderes gutes Wort wäre M?",
+          "start": 3.44,
+          "end": 8.2,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Ey, performant.",
+          "start": 8.56,
+          "end": 9.72,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Das ist Microsoft benutzt dieses Wort schon immer.",
+          "start": 10.1,
+          "end": 13.26,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Ist das ein Microsoftwort?",
+          "start": 13.44,
+          "end": 14.66,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "iC_Oxfsimw0": {
+    "processed_at": "2025-07-21T03:57:24.486089",
+    "analysis": {
+      "total_words": 4201,
+      "scott_words": 2800,
+      "mark_words": 1401,
+      "scott_percentage": 67,
+      "mark_percentage": 33,
+      "segments_analyzed": 432,
+      "scott_segments": 263,
+      "mark_segments": 169,
+      "processing_note": "Real audio processing completed at 2025-07-21T03:57:24.486089",
+      "sample_transcription": [
+        {
+          "text": "Fresh haircut because that's Chris.",
+          "start": 1.2599999999999978,
+          "end": 2.96,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "We've changed it.",
+          "start": 3.16,
+          "end": 4.04,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "You're in a high-end tight today.",
+          "start": 4.28,
+          "end": 5.6,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "It looks very good.",
+          "start": 5.6,
+          "end": 6.32,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Thank you.",
+          "start": 6.94,
+          "end": 7.34,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "PjInF4wbmxM": {
+    "processed_at": "2025-07-21T04:29:44.916392",
+    "analysis": {
+      "total_words": 5946,
+      "scott_words": 4509,
+      "mark_words": 1437,
+      "scott_percentage": 76,
+      "mark_percentage": 24,
+      "segments_analyzed": 370,
+      "scott_segments": 272,
+      "mark_segments": 98,
+      "processing_note": "Real audio processing completed at 2025-07-21T04:29:44.916392",
+      "sample_transcription": [
+        {
+          "text": "I did the talk after your talk long after I went left at our little internal event yesterday.",
+          "start": 2.1800000000000006,
+          "end": 8.8,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Did you talk go well?",
+          "start": 9.48,
+          "end": 10.82,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "You watched it didn't you?",
+          "start": 11.48,
+          "end": 12.32,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "No I was asleep.",
+          "start": 12.96,
+          "end": 13.58,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Wait I think you were talking before my talk.",
+          "start": 14.38,
+          "end": 18.08,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "8WEoZ646Ikk": {
+    "processed_at": "2025-07-21T05:07:59.675245",
+    "analysis": {
+      "total_words": 4033,
+      "scott_words": 2375,
+      "mark_words": 1658,
+      "scott_percentage": 59,
+      "mark_percentage": 41,
+      "segments_analyzed": 504,
+      "scott_segments": 282,
+      "mark_segments": 222,
+      "processing_note": "Real audio processing completed at 2025-07-21T05:07:59.675245",
+      "sample_transcription": [
+        {
+          "text": "I guess if I'm showing it, I need to adjust my screen resolution.",
+          "start": 0.0,
+          "end": 4.22,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "And what is it?",
+          "start": 5.140000000000002,
+          "end": 6.5,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "1920 by 1200 to 1080.",
+          "start": 6.84,
+          "end": 8.6,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "1080p.",
+          "start": 9.460000000000003,
+          "end": 9.98,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Uh-huh.",
+          "start": 11.800000000000002,
+          "end": 12.5,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "X2jrg7r4gOY": {
+    "processed_at": "2025-07-21T06:17:58.114674",
+    "analysis": {
+      "total_words": 6169,
+      "scott_words": 3608,
+      "mark_words": 2561,
+      "scott_percentage": 58,
+      "mark_percentage": 42,
+      "segments_analyzed": 720,
+      "scott_segments": 395,
+      "mark_segments": 325,
+      "processing_note": "Real audio processing completed at 2025-07-21T06:17:58.114674",
+      "sample_transcription": [
+        {
+          "text": "I did an AI for PMs training today.",
+          "start": 0.0,
+          "end": 4.34,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "And it's very good for brainstorming.",
+          "start": 6.920000000000001,
+          "end": 8.68,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "It's very good for summarizing.",
+          "start": 8.7,
+          "end": 9.88,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "It's very good for getting started.",
+          "start": 10.56,
+          "end": 12.06,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Like if you fear the blank page, it's a great way to get started.",
+          "start": 12.24,
+          "end": 15.62,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "SUpiZMwJn54": {
+    "processed_at": "2025-07-21T07:05:27.772685",
+    "analysis": {
+      "total_words": 6440,
+      "scott_words": 4347,
+      "mark_words": 2093,
+      "scott_percentage": 68,
+      "mark_percentage": 32,
+      "segments_analyzed": 476,
+      "scott_segments": 315,
+      "mark_segments": 161,
+      "processing_note": "Real audio processing completed at 2025-07-21T07:05:27.772685",
+      "sample_transcription": [
+        {
+          "text": "What I'm doing is I'm looking at the color of your skin as you open and close different",
+          "start": 0.6999999999999968,
+          "end": 7.22,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "windows.",
+          "start": 7.22,
+          "end": 7.62,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "And I'm trying to figure out what you're doing.",
+          "start": 8.1,
+          "end": 12.34,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Because I think you can turn it over.",
+          "start": 12.78,
+          "end": 14.34,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "You know Pat.",
+          "start": 14.34,
+          "end": 14.6,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "Ypcog_lv0DA": {
+    "processed_at": "2025-07-21T08:12:11.866292",
+    "analysis": {
+      "total_words": 4770,
+      "scott_words": 3476,
+      "mark_words": 1294,
+      "scott_percentage": 73,
+      "mark_percentage": 27,
+      "segments_analyzed": 828,
+      "scott_segments": 531,
+      "mark_segments": 297,
+      "processing_note": "Real audio processing completed at 2025-07-21T08:12:11.866292",
+      "sample_transcription": [
+        {
+          "text": "Well, how do we break out?",
+          "start": 1.119999999999996,
+          "end": 3.16,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I don't know.",
+          "start": 3.38,
+          "end": 4.44,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "I thought they had skin care.",
+          "start": 4.88,
+          "end": 6.24,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "I didn't do it.",
+          "start": 6.8,
+          "end": 8.06,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "But we didn't break out?",
+          "start": 8.54,
+          "end": 9.6,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "Jhga7FOB2XA": {
+    "processed_at": "2025-07-21T09:09:59.311711",
+    "analysis": {
+      "total_words": 4605,
+      "scott_words": 2850,
+      "mark_words": 1755,
+      "scott_percentage": 62,
+      "mark_percentage": 38,
+      "segments_analyzed": 652,
+      "scott_segments": 374,
+      "mark_segments": 278,
+      "processing_note": "Real audio processing completed at 2025-07-21T09:09:59.311711",
+      "sample_transcription": [
+        {
+          "text": "I'm so glad that you're like fully plugged in and ready to go today.",
+          "start": 5.200000000000003,
+          "end": 9.2,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Ready.",
+          "start": 10.980000000000004,
+          "end": 11.46,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "So we have two technical topics.",
+          "start": 14.340000000000007,
+          "end": 17.3,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Do we?",
+          "start": 18.02,
+          "end": 18.28,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Well, that's what's on deck right here.",
+          "start": 19.28,
+          "end": 22.38,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "FWMWgqs3ARw": {
+    "processed_at": "2025-07-21T09:30:51.961727",
+    "analysis": {
+      "total_words": 3450,
+      "scott_words": 1944,
+      "mark_words": 1506,
+      "scott_percentage": 56,
+      "mark_percentage": 44,
+      "segments_analyzed": 219,
+      "scott_segments": 118,
+      "mark_segments": 101,
+      "processing_note": "Real audio processing completed at 2025-07-21T09:30:51.959722",
+      "sample_transcription": [
+        {
+          "text": "Here we go. Take 64.",
+          "start": 3.080000000000002,
+          "end": 5.04,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Picked around number two. Yeah. Power of two.",
+          "start": 7.640000000000002,
+          "end": 11.54,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Yeah. Somebody who was going to gradually me on doing a thousand episodes of my other",
+          "start": 12.18,
+          "end": 16.02,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "podcast. And I was like, talking to me at a thousand twenty four because",
+          "start": 16.02,
+          "end": 19.76,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "thousands nothing. There's nothing meaningful about that. Doesn't count.",
+          "start": 20.280000000000005,
+          "end": 22.8,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "2aKfztEnN7k": {
+    "processed_at": "2025-07-21T10:34:58.565148",
+    "analysis": {
+      "total_words": 4502,
+      "scott_words": 3111,
+      "mark_words": 1391,
+      "scott_percentage": 69,
+      "mark_percentage": 31,
+      "segments_analyzed": 576,
+      "scott_segments": 360,
+      "mark_segments": 216,
+      "processing_note": "Real audio processing completed at 2025-07-21T10:34:58.560609",
+      "sample_transcription": [
+        {
+          "text": "Did we, you and I, riffed on picking up pregnant ladies in one of our talks?",
+          "start": 0.5399999999999997,
+          "end": 3.72,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "The one went on Zoom it.",
+          "start": 5.16,
+          "end": 7.1,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Yeah.",
+          "start": 7.38,
+          "end": 7.56,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Because I was like, why don't you just write the whole thing in Rust?",
+          "start": 9.06,
+          "end": 10.84,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Yeah.",
+          "start": 11.28,
+          "end": 11.44,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "RpV5EucK43U": {
+    "processed_at": "2025-07-21T11:33:12.370923",
+    "analysis": {
+      "total_words": 5637,
+      "scott_words": 3998,
+      "mark_words": 1639,
+      "scott_percentage": 71,
+      "mark_percentage": 29,
+      "segments_analyzed": 364,
+      "scott_segments": 228,
+      "mark_segments": 136,
+      "processing_note": "Real audio processing completed at 2025-07-21T11:33:12.368444",
+      "sample_transcription": [
+        {
+          "text": "Are you going to be able to not check email during the show?",
+          "start": 0.0,
+          "end": 3.6,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "You're literally deleting email right now, Mark.",
+          "start": 7.400000000000004,
+          "end": 10.0,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "He shows me his hands.",
+          "start": 10.74,
+          "end": 11.92,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "He's like, you're on our pilot.",
+          "start": 12.22,
+          "end": 14.54,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Change man.",
+          "start": 14.66,
+          "end": 15.22,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "Z1yYcUFzH2A": {
+    "processed_at": "2025-07-21T11:47:37.288208",
+    "analysis": {
+      "total_words": 4019,
+      "scott_words": 3066,
+      "mark_words": 953,
+      "scott_percentage": 76,
+      "mark_percentage": 24,
+      "segments_analyzed": 111,
+      "scott_segments": 79,
+      "mark_segments": 32,
+      "processing_note": "Real audio processing completed at 2025-07-21T11:47:37.283572",
+      "sample_transcription": [
+        {
+          "text": "Hey friends, I'm Scott Hansman and this week I want to learn how to not ship the org chart.",
+          "start": 0.0,
+          "end": 4.74,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "What are you learning today, Mark?",
+          "start": 5.22,
+          "end": 6.22,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "Learning with you, how not to ship the org chart.",
+          "start": 7.14,
+          "end": 9.02,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "Mark, I went and I wanted to buy a new electric vehicle and I went and did a bunch of test drives.",
+          "start": 26.639999999999993,
+          "end": 32.3,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "So I'm test driving every EV on the market.",
+          "start": 32.46,
+          "end": 35.26,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        }
+      ],
+      "full_transcription_available": true
+    }
+  },
+  "JxRLX4VGuYg": {
+    "processed_at": "2025-07-21T12:44:38.228673",
+    "analysis": {
+      "total_words": 3746,
+      "scott_words": 2525,
+      "mark_words": 1221,
+      "scott_percentage": 67,
+      "mark_percentage": 33,
+      "segments_analyzed": 511,
+      "scott_segments": 329,
+      "mark_segments": 182,
+      "processing_note": "Real audio processing completed at 2025-07-21T12:44:38.226310",
+      "sample_transcription": [
+        {
+          "text": "I've always said, for the last 15 years of Microsoft,",
+          "start": 0.0,
+          "end": 2.56,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "if you don't get in trouble twice a year",
+          "start": 2.76,
+          "end": 5.24,
+          "speaker": "mark",
+          "scott_score": 0.0,
+          "mark_score": 1.0
+        },
+        {
+          "text": "for advocating for the customer,",
+          "start": 5.860000000000002,
+          "end": 7.28,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "for doing something that you feel strongly about,",
+          "start": 7.52,
+          "end": 9.8,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        },
+        {
+          "text": "then you're not pushing hard enough.",
+          "start": 10.12,
+          "end": 11.46,
+          "speaker": "scott",
+          "scott_score": 1.0,
+          "mark_score": 0.0
+        }
+      ],
+      "full_transcription_available": true
+    }
   }
 }

@@ -217,4 +217,11 @@ If you encounter any issues or have questions:
 
 ---
 
-**Built with ❤️ for podcast analytics enthusiasts**
+## Screenshots
+
+![Screenshot](./images/screenshot1.png)
+![Screenshot](./images/screenshot2.png)
+![Screenshot](./images/screenshot3.png)
+![Screenshot](./images/screenshot4.png)
+![Screenshot](./images/screenshot5.png)
+![Screenshot](./images/screenshot6.png)
