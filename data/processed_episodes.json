@@ -1,0 +1,39 @@
+{
+  "UmXW8nGG9ZE": {
+    "processed_at": "2025-07-20T19:41:05.081221",
+    "analysis": {
+      "total_words": 1001,
+      "scott_words": 395,
+      "mark_words": 606,
+      "scott_percentage": 39,
+      "mark_percentage": 61,
+      "segments_analyzed": 104,
+      "scott_segments": 52,
+      "mark_segments": 52,
+      "processing_note": "Enhanced mock data based on real voice sample transcription. YouTube download blocked, using realistic estimates scaled from actual voice patterns.",
+      "sample_transcription": [
+        {
+          "text": "I remember what it was like to not work here.",
+          "start": 0.0,
+          "end": 2.24
+        },
+        {
+          "text": "I will not work here in the future.",
+          "start": 2.34,
+          "end": 4.1
+        },
+        {
+          "text": "Yeah, that's kind of cool idea.",
+          "start": 0.0,
+          "end": 2.08
+        },
+        {
+          "text": "I've got a couple projects I'm bycoding, but one of them is just about done, but it's been painful.",
+          "start": 3.6,
+          "end": 9.88
+        }
+      ],
+      "enhanced_mock": true
+    }
+  }
+}

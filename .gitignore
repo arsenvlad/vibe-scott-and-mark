@@ -210,14 +210,17 @@ __marimo__/
 # Audio cache and downloaded files
 data/audio_cache/
 *.wav
-*.mp3
 *.mp4
 *.webm
 *.m4a
 
-# Data files (keep structure but not large content)
-data/episodes.json
-data/processed_episodes.json
+# Allow voice sample files but ignore other mp3s
+*.mp3
+!data/voice_*.mp3
+
+# Allow important data files to be tracked
+# data/episodes.json - commented out to include in repo
+# data/processed_episodes.json - commented out to include in repo
 
 # Model files
 *.pkl
